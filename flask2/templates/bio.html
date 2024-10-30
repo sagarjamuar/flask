@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sagar's bio</title>
+</head>
+<body>
+    <h1>Welcome to Sagar's bio</h1>
+    <p><strong>Name: </strong>{{ bio.name }}</p>
+    <p><strong>Age: </strong>{{ bio.age }}</p>
+    <p><strong>Hobbies: </strong></p>
+    <ul>
+        {% for hobby in bio.hobbies %}
+            <li>{{ hobby }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

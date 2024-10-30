@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <form method="POST">
+        Enter your name:
+        <input type="text" name="name"><br>
+        Enter your feedback:
+        <textarea name="feedback" id="" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="Send!">
+    </form>
+    {% if feedbacks %}
+    <h2>Feedback</h2>
+    {% for item in feedbacks %}
+    <ul>
+        <li>{{item['name']}}</li>
+        <li>{{item['feedback']}}</li>
+    </ul>
+    {% endfor %}
+    {% endif %}
+</body>
+</html>

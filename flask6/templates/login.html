@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body>
+<form method="POST">
+    Enter your username:
+    <input type="text" name="username"><br>
+    Enter your password:
+    <input type="password" name="password"><br>
+    <input type="submit" value="Login"><br>
+</form>
+{% if credentials %}
+<h2>{{ credentials }} </h2>
+{% endif %}
+</body>
+</html>

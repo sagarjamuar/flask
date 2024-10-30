@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+    <form method="POST">
+        Enter first number
+        <input type="text" name="first"><br>
+        Enter second number
+        <input type="text" name="second"><br>
+        <input type="submit" value="Add">
+    </form>
+    {% if result %}
+        <h2>Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
